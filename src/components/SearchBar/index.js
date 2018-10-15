@@ -13,20 +13,30 @@ export default class SearchBar extends Component {
     });
   };
 
+  // handle submitting the search bar form
+  // send term to parent (Homepage.js) in order to make API call
+  handleSubmit = evt => {
+    evt.preventDefault();
+    this.props.search(this.state.searchTerm);
+    this.setState({ searchTerm: '' });
+  };
+
   render() {
     return (
-      <div className="search-term">
-        <label htmlFor="search">
-          <input
-            onChange={this.handleChange}
-            type="text"
-            id="search"
-            name="searchTerm"
-            value={this.state.searchTerm}
-            placeholder="Search for Gif"
-          />
-        </label>
-        <input type="submit" value="Search for some Gifs" />
+      <div className="searchbar-container">
+        <form onSubmit={this.handleSubmit}>
+          <label htmlFor="search">
+            <input
+              onChange={this.handleChange}
+              type="text"
+              id="search"
+              name="searchTerm"
+              value={this.state.searchTerm}
+              placeholder="Search for Gif"
+            />
+          </label>
+          <input type="submit" value="Search for some Gifs" />
+        </form>
       </div>
     );
   }
