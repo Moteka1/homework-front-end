@@ -10,6 +10,9 @@ export default class Homepage extends Component {
     trendingGifs: []
   };
 
+  // to have trending gifs need a component did mount to load API request once they are ready
+  componentDidMount;
+
   // search function takes in a term and return array of gif results
   searchGiphy = async searchTerm => {
     try {
@@ -17,11 +20,24 @@ export default class Homepage extends Component {
       const apiKey = 'KdpYtENdZIbVcvy4BGZEDKNameGAKyaw'; // process.env.REACT_APP_GIPHY_API_KEY;
       const url = `http://api.giphy.com/v1/gifs/search?q=${searchTerm}&api_key=${apiKey}&limit=${limit}`;
       const response = await axios.get(url).then(res => {
-        return res.data.data;
+        return res.data.data; // array of objs, each obj contains gif info from the search
       });
       this.setState({
         ...this.state,
         gifResults: response
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  trendingGiphy = async () => {
+    try {
+      const url =
+        'https://api.giphy.com/v1/gifs/trending?api_key=KdpYtENdZIbVcvy4BGZEDKNameGAKyaw';
+      const apiKey = 'KdpYtENdZIbVcvy4BGZEDKNameGAKyaw';
+      const response = await axios.get(url).then(res => {
+        return res.data.data; // arr of objs of trending gifs
       });
     } catch (error) {
       console.log(error);
