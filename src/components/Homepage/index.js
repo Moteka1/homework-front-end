@@ -14,7 +14,7 @@ export default class Homepage extends Component {
   searchGiphy = async searchTerm => {
     try {
       const limit = 3;
-      const apiKey = process.env.REACT_APP_GIPHY_API_KEY;
+      const apiKey = 'KdpYtENdZIbVcvy4BGZEDKNameGAKyaw'; // process.env.REACT_APP_GIPHY_API_KEY;
       const url = `http://api.giphy.com/v1/gifs/search?q=${searchTerm}&api_key=${apiKey}&limit=${limit}`;
       const response = await axios.get(url).then(res => {
         return res.data.data;
