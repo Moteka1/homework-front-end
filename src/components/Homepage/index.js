@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import SearchBar from '../SearchBar';
 import axios from 'axios';
 import GifArea from '../GifArea';
+import GifCard from '../GifCard';
 
 export default class Homepage extends Component {
   state = {
-    gifResults: []
+    gifResults: [],
+    trendingGifs: []
   };
 
   // search function takes in a term and return array of gif results
@@ -17,7 +19,6 @@ export default class Homepage extends Component {
       const response = await axios.get(url).then(res => {
         return res.data.data;
       });
-      console.log(response[0].url);
       this.setState({
         ...this.state,
         gifResults: response
@@ -28,8 +29,14 @@ export default class Homepage extends Component {
   };
   render() {
     let gifs = this.state.gifResults.map(gif => (
-      <img key={gif.id} src={gif.images.fixed_height.url} alt="#" />
+      // <img key={gif.id} src={gif.images.fixed_height.url} alt="#" />
+      <GifCard
+        gifSrc={gif.images.fixed_height.url}
+        gifAlt={gif.title}
+        key={gif.id}
+      />
     ));
+
     return (
       <div className="homepage-container">
         {/* Navbar */}
