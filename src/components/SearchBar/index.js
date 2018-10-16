@@ -35,7 +35,7 @@ export default class SearchBar extends Component {
               placeholder="Search for Gif"
             />
           </label>
-          <input type="submit" value="Search for some Gifs" />
+          <input type="submit" value="Search" />
         </form>
       </div>
     );

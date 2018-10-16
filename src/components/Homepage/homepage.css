@@ -1,3 +1,13 @@
+.homepage-container {
+  max-width: 1000px;
+}
+
 .homepage-trending {
   display: flex;
+  overflow-x: scroll;
+}
+
+.homepage-foundGifs {
+  display: flex;
+  flex-wrap: wrap;
 }
