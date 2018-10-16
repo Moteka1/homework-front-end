@@ -7,7 +7,8 @@ export default class GifCard extends Component {
   render() {
     const { gifSrc, gifAlt } = this.props;
     return (
-      <div className="gifcard-container">
+      // need a way to open and close modal
+      <div className="gifcard-container" onClick={this.openModal}>
         <img src={gifSrc} alt={gifAlt} />
       </div>
     );
