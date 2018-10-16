@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './gifcard.css';
 
 // card should include image info should be passed in as props from parent
 
