@@ -50,10 +50,6 @@ export default class Homepage extends Component {
     }
   };
 
-  // function to display modal and close modal
-  // openModal = () => {
-
-  // }
   render() {
     let foundGifs = this.state.gifResults.map(gif => (
       // might want gif.images.downsized.url for searched
