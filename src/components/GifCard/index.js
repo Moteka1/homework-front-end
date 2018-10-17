@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import modal from 'react-responsive-modal';
+import Modal from 'react-responsive-modal';
 import GifModal from '../GifModal';
 import './gifcard.css';
 
@@ -15,18 +15,30 @@ export default class GifCard extends Component {
     this.setState({ open: true });
   };
 
-  closeModal = () => {
+  onCloseModal = e => {
+    e.stopPropagation();
     this.setState({ open: false });
   };
 
   render() {
-    const { gifSrc, gifAlt } = this.props;
+    const { gifSrc, gifAlt, title, username, rating, giphyUrl } = this.props;
+    const { open } = this.state;
     return (
       // need a way to open and close modal
       <div className="gifcard-container" onClick={this.openModal}>
         <img src={gifSrc} alt={gifAlt} />
         {/* conditionally rendering components */}
-        {this.state.open && <GifModal closeModal={this.closeModal} />}
+        <Modal open={open} onClose={this.onCloseModal} center>
+          <h2 className="modal-title">{title}</h2>
+          <div>
+            Username: {username}
+            <br />
+            Rating: {rating}
+            <br />
+            Giphy Link: {giphyUrl}
+          </div>
+        </Modal>
+        {/* {this.state.open && <GifModal closeModal={this.closeModal} />} */}
       </div>
     );
   }

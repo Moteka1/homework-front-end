@@ -57,6 +57,10 @@ export default class Homepage extends Component {
         gifSrc={gif.images.fixed_height.url}
         gifAlt={gif.title}
         key={gif.id}
+        title={gif.title}
+        username={gif.username}
+        rating={gif.rating}
+        giphyUrl={gif.url}
       />
     ));
 
@@ -65,6 +69,10 @@ export default class Homepage extends Component {
         gifSrc={gif.images.fixed_height.url}
         gifAlt={gif.title}
         key={gif.id}
+        title={gif.title}
+        username={gif.username}
+        rating={gif.rating}
+        giphyUrl={gif.url}
       />
     ));
 

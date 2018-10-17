@@ -1,3 +1,7 @@
 .gifcard-container {
   margin: 8px;
 }
+
+.modal-title {
+  color: blue;
+}
