@@ -54,7 +54,7 @@ export default class Homepage extends Component {
     let foundGifs = this.state.gifResults.map(gif => (
       // might want gif.images.downsized.url for searched
       <GifCard
-        gifSrc={gif.images.fixed_height.url}
+        gifSrc={gif.images.downsized.url}
         gifAlt={gif.title}
         key={gif.id}
         title={gif.title}

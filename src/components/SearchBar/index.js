@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './SearchBar.css';
 
 export default class SearchBar extends Component {
   // instead of constructor and super(props)
@@ -24,19 +25,22 @@ export default class SearchBar extends Component {
   render() {
     return (
       <div className="searchbar-container">
-        <form onSubmit={this.handleSubmit}>
-          <label htmlFor="search">
-            <input
-              onChange={this.handleChange}
-              type="text"
-              id="search"
-              name="searchTerm"
-              value={this.state.searchTerm}
-              placeholder="Search for Gif"
-            />
-          </label>
-          <input type="submit" value="Search" />
-        </form>
+        <div className="searchbar-content">
+          <form onSubmit={this.handleSubmit}>
+            <label htmlFor="search">
+              <input
+                onChange={this.handleChange}
+                type="text"
+                id="search"
+                name="searchTerm"
+                className="searchTerm"
+                value={this.state.searchTerm}
+                placeholder="Search for Gif"
+              />
+            </label>
+            <input type="submit" value="Search" className="searchbar-button" />
+          </form>
+        </div>
       </div>
     );
   }

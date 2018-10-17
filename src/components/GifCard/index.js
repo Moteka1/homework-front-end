@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Modal from 'react-responsive-modal';
-import GifModal from '../GifModal';
 import './gifcard.css';
 
 // card should include image info should be passed in as props from parent
@@ -38,7 +37,6 @@ export default class GifCard extends Component {
             Giphy Link: {giphyUrl}
           </div>
         </Modal>
-        {/* {this.state.open && <GifModal closeModal={this.closeModal} />} */}
       </div>
     );
   }
