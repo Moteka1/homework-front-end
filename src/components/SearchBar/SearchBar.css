@@ -9,7 +9,9 @@ button:focus {
   width: 70%;
 }
 
-/* @media only screen && min */
+.searchbar-button {
+  background-color: goldenrod;
+}
 
 @media only screen and (max-width: 620px) {
   /* For mobile phones: */

@@ -85,7 +85,6 @@ export default class Homepage extends Component {
         <h3>Trending Gifs!</h3>
         <div className="homepage-trending">{trendingGifs}</div>
         {/* home page/ area to fill, maybe route to a search page*/}
-
         <div className="homepage-foundGifs">{foundGifs}</div>
         {/* <GifArea gifResults={this.state.gifResults} /> */}
         {/* each giphy is a card */}
