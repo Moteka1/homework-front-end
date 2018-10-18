@@ -44,12 +44,12 @@ export default class GifCard extends Component {
     );
   }
 }
+
 GifCard.propTypes = {
-  gifSrc: PropTypes.string,
+  gifSrc: PropTypes.string.isRequired,
   gifAlt: PropTypes.string,
   title: PropTypes.string,
   username: PropTypes.string,
   rating: PropTypes.string,
   giphyUrl: PropTypes.string
-  // test: PropTypes.object.isRequired
 };
