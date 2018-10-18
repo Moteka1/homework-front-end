@@ -31,11 +31,12 @@ export default class GifCard extends Component {
           <h2 className="modal-title">{title}</h2>
           <img src={gifSrc} alt={gifAlt} />
           <div>
-            Username: {username}
+            <strong>Username:</strong> {username}
             <br />
-            Rating: {rating}
+            <strong>Rating:</strong> {rating}
             <br />
-            Giphy Link: {giphyUrl}
+            <strong>Giphy Link:</strong>{' '}
+            <a href={`${giphyUrl}`}>Link to the actual giphy!</a>
           </div>
         </Modal>
       </div>
