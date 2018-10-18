@@ -2,9 +2,15 @@
 
 Front End coding challenge.
 
+## My Notes
+
+After my emails with Austin and Matt, I know it's not best practice to include the API key. Usually i would include in an as an ENV var but for the project purpose included for ease of use.
+
+Hope you enjoy, I tried to make it clean and pleasent to look at.
+
 ## Project
 
-We would like you to build a web app that displays the trending GIFs on [Giphy](https://giphy.com/). 
+We would like you to build a web app that displays the trending GIFs on [Giphy](https://giphy.com/).
 Users visiting the website should be able to search for GIFs and see a list of results. The user should be able to expand a GIF and see its details (username, rating, anything you think could be relevant).
 
 Users should have a good user experience on desktop, tablet and mobile devices.
@@ -22,7 +28,6 @@ We strongly encourage you to pick a couple of optional improvements. The followi
 - Let the user upload a GIF.
 - Add some unit tests.
 
-
 ### Project Structure
 
 We've included all of the boilerplate to get started with this project using [create-react-app](https://github.com/facebookincubator/create-react-app), feel free to use this structure if you'd like. If you'd prefer to use something other than React or you'd prefer a different project structure, go ahead and make any changes you'd like.
@@ -34,11 +39,11 @@ We’ll evaluate the exercise by looking at the end result and the code.
 
 ### Notes
 
-Please, don't open a PR against this repo. Just follow the direction from the rectuiter on how to submit the exercise.
+Please, don't open a PR against this repo. Just follow the direction from the recruiter on how to submit the exercise.
 
 ### Coding at Eaze
 
-At [Eaze](https://www.eaze.com) we strive for writing simple, maintainable and clean code. 
+At [Eaze](https://www.eaze.com) we strive for writing simple, maintainable and clean code.
 
 We prefer simplicity over complexity.
 
