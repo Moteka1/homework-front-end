@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Modal from 'react-responsive-modal';
 import './gifcard.css';
 
@@ -43,3 +44,12 @@ export default class GifCard extends Component {
     );
   }
 }
+GifCard.propTypes = {
+  gifSrc: PropTypes.string,
+  gifAlt: PropTypes.string,
+  title: PropTypes.string,
+  username: PropTypes.string,
+  rating: PropTypes.string,
+  giphyUrl: PropTypes.string
+  // test: PropTypes.object.isRequired
+};
