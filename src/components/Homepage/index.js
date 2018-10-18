@@ -8,7 +8,7 @@ export default class Homepage extends Component {
   state = {
     gifResults: [],
     trendingGifs: [],
-    loading: true // will need to add for a loading placeholder later
+    searchLoad: true // will need to add for a loading placeholder later, did not get around to making a mosaic placeholder
   };
 
   // to have trending gifs need a component did mount to load API request once they are ready
@@ -27,7 +27,8 @@ export default class Homepage extends Component {
       // update state in a way that does not mutate state
       this.setState({
         ...this.state,
-        gifResults: response
+        gifResults: response,
+        searchLoad: false
       });
     } catch (error) {
       console.log(error);
@@ -78,16 +79,23 @@ export default class Homepage extends Component {
 
     return (
       <div className="homepage-container">
-        {/* Navbar */}
-        <h1>Find A Gif</h1>
+        <h1>FIND A GIF</h1>
         {/* search bar */}
         <SearchBar search={this.searchGiphy} />
         {/* trending */}
-        <h3>Trending Gifs!</h3>
+        <h3 className="homepage-trendin-header">Trending Gifs!</h3>
         <div className="homepage-trending">{trendingGifs}</div>
         {/* home page/ area to fill, maybe route to a search page*/}
+        <h2>Gifs found will display below!</h2>
+        {/* place holder images */}
+        {/* if searched state is true display found Gifs */}
+        {this.state.searchLoad && (
+          <img
+            src="http://icons-for-free.com/free-icons/png/512/283043.png"
+            alt="placeholder"
+          />
+        )}
         <div className="homepage-foundGifs">{foundGifs}</div>
-        {/* <GifArea gifResults={this.state.gifResults} /> */}
         {/* each giphy is a card */}
       </div>
     );
