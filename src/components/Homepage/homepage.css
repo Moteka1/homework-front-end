@@ -18,7 +18,7 @@
   flex-wrap: wrap;
 }
 
-.homepage-foundGifs > img,
+.homepage-foundGifs > .gifcard-container > img,
 .placeholder {
   max-width: 100%;
   height: auto;
