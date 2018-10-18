@@ -93,6 +93,7 @@ export default class Homepage extends Component {
           <img
             src="http://icons-for-free.com/free-icons/png/512/283043.png"
             alt="placeholder"
+            className="placeholder"
           />
         )}
         <div className="homepage-foundGifs">{foundGifs}</div>

@@ -34,7 +34,6 @@ input:focus {
   /* For mobile phones: */
   .searchTerm,
   .searchbar-button {
-    width: 100%;
     margin: 0;
   }
 }
