@@ -1,5 +1,12 @@
 .gifcard-container {
   margin: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.gifcard-container:hover {
+  transform: scale(1.25);
+  box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.4);
 }
 
 .modal-title {

@@ -1,16 +1,33 @@
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
+input:focus {
   outline-width: 0;
 }
 
 .searchTerm {
   width: 70%;
+  height: 40px;
+  margin: 20px 0 20px 20px;
+  padding-left: 1em;
+  border-radius: 8px;
 }
 
 .searchbar-button {
-  background-color: goldenrod;
+  background-color: red;
+  border-radius: 8px;
+  height: 46px;
+  color: white;
+}
+
+.searchbar-button:hover,
+.searchbar-button:focus {
+  background: #0053ba;
+}
+
+.searchbar-button:focus {
+  outline-offset: -4px;
+}
+
+.searchbar-button:active {
+  transform: scale(0.99);
 }
 
 @media only screen and (max-width: 620px) {
@@ -18,5 +35,6 @@ button:focus {
   .searchTerm,
   .searchbar-button {
     width: 100%;
+    margin: 0;
   }
 }

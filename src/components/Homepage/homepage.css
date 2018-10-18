@@ -1,14 +1,24 @@
 .homepage-container {
   max-width: 1000px;
+  /* margin auto will center webpage */
   margin: auto;
 }
 
 .homepage-trending {
   display: flex;
   overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  margin: 1em;
 }
 
 .homepage-foundGifs {
   display: flex;
   flex-wrap: wrap;
+}
+
+h1 {
+  margin: 0;
+  padding: 0.5em;
 }

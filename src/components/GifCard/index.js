@@ -29,6 +29,7 @@ export default class GifCard extends Component {
         {/* conditionally rendering components */}
         <Modal open={open} onClose={this.onCloseModal} center>
           <h2 className="modal-title">{title}</h2>
+          <img src={gifSrc} alt={gifAlt} />
           <div>
             Username: {username}
             <br />

@@ -79,6 +79,7 @@ export default class Homepage extends Component {
     return (
       <div className="homepage-container">
         {/* Navbar */}
+        <h1>Find A Gif</h1>
         {/* search bar */}
         <SearchBar search={this.searchGiphy} />
         {/* trending */}
