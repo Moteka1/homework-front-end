@@ -6,7 +6,7 @@ Front End coding challenge.
 
 After my emails with Austin and Matt, I know it's not best practice to include the API key. Usually i would include in an as an ENV var but for the project purpose included for ease of use.
 
-Hope you enjoy, I tried to make it clean and pleasent to look at.
+Hope you enjoy, I tried to make it clean and pleasant to look at.
 
 ## Project
 
