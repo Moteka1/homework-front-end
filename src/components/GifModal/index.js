@@ -17,5 +17,5 @@ export default class GifModal extends Component {
 }
 
 GifModal.propTypes = {
-  closeModal: PropTypes.func.isRequired
+  closeModal: PropTypes.func
 };

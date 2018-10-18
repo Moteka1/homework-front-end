@@ -46,7 +46,7 @@ export default class GifCard extends Component {
 }
 
 GifCard.propTypes = {
-  gifSrc: PropTypes.string.isRequired,
+  gifSrc: PropTypes.string,
   gifAlt: PropTypes.string,
   title: PropTypes.string,
   username: PropTypes.string,

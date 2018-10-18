@@ -50,64 +50,7 @@ exports[`<Homepage /> matches the snapshot 1`] = `
   </h2>
   <img
     alt="placeholder"
-    src="http://icons-for-free.com/free-icons/png/512/283043.png"
-  />
-  <div
-    className="homepage-foundGifs"
-  />
-</div>
-`;
-
-exports[`<SimpleComponent /> matches the snapshot 1`] = `
-<div
-  className="homepage-container"
->
-  <h1>
-    FIND A GIF
-  </h1>
-  <div
-    className="searchbar-container"
-  >
-    <div
-      className="searchbar-content"
-    >
-      <form
-        onSubmit={[Function]}
-      >
-        <label
-          htmlFor="search"
-        >
-          <input
-            className="searchTerm"
-            id="search"
-            name="searchTerm"
-            onChange={[Function]}
-            placeholder="Search for Gif"
-            type="text"
-            value=""
-          />
-        </label>
-        <input
-          className="searchbar-button"
-          type="submit"
-          value="Search"
-        />
-      </form>
-    </div>
-  </div>
-  <h3
-    className="homepage-trendin-header"
-  >
-    Trending Gifs!
-  </h3>
-  <div
-    className="homepage-trending"
-  />
-  <h2>
-    Gifs found will display below!
-  </h2>
-  <img
-    alt="placeholder"
+    className="placeholder"
     src="http://icons-for-free.com/free-icons/png/512/283043.png"
   />
   <div
